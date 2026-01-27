@@ -11,7 +11,7 @@ class TestCleaning(unittest.TestCase):
 
     def test_column_cleaning_salaries(self):
         result = clean_column(self.test_column_1)
-        salaries = result[0]
+        salaries = result[1]
         self.assertEqual(salaries, [
             10,
             15,
@@ -20,7 +20,7 @@ class TestCleaning(unittest.TestCase):
 
     def test_column_cleaning_currency(self):
         result = clean_column(self.test_column_1)
-        currency = result[1]
+        currency = result[2]
         self.assertEqual(currency, [
             "USD",
             "USD",
@@ -29,7 +29,7 @@ class TestCleaning(unittest.TestCase):
 
     def test_column_cleaning_salary_info(self):
         result = clean_column(self.test_column_1)
-        salary_infos = result[2]
+        salary_infos = result[3]
         self.assertEqual(salary_infos, [
             "hourly",
             "hourly",
