@@ -19,6 +19,9 @@ jobs:
         with:
           python-version: 3.13.7
 
+      - name: pip install
+        run: pip install -r requirements.txt
+
       - name: Run Unit Testing
         run: python tests.py
         
