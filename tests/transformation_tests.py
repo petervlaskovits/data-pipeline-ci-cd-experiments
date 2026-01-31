@@ -1,7 +1,7 @@
 import unittest
 import pandas as pd
 
-from transformations import clean_column
+from src.transformations import clean_column
 
 class TestCleaning(unittest.TestCase):
     test_column_1 = pd.Series([
