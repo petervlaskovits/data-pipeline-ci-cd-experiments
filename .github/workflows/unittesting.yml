@@ -22,6 +22,6 @@ jobs:
       - name: pip install
         run: pip install -r requirements.txt
 
-      - name: Run Unit Testing
-        run: python tests.py
+      - name: Run Unit Testing for Data Cleaning Operations
+        run: python tests/transformation_tests.py
         
